@@ -1,0 +1,40 @@
+.first-row {
+  display: grid;
+  gap: 25px 20px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+  }
+
+  @media screen and (min-width: 1440px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.second-row {
+  // line-height: 100px; Dorian FAIL!!!
+  display: grid;
+  gap: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  &__title {
+    grid-column: 1 / -1;
+    margin-top: 60px;
+    color: var(--dark-grayish-blue);
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(6, 1fr);
+    width: 80%;
+  }
+
+  @media screen and (min-width: 1440px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

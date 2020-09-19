@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="icon" type="image/png" href="assets/icons/favicon.png")
+    link(href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet")
+    link(rel="stylesheet", href="css/styles.css")
+    title BEM Workshop
+  body
+    header.header
+      .header__texts
+        h1.header__title Social Media Dashboard
+        p#total-followers.header__subtitle Total Followers: 23.004
+      #switch.switch
+        p#switch-text.switch__text Dark Mode
+        input(type="checkbox" id="switch-input" class="switch__checkbox")
+        label(for="switch-input" id="switch-label" class="switch__label")
+    article.first-row
+      //- Card Facebook
+      .card.card--facebook
+        .card__title
+          img(src="/assets/icons/icon-facebook.svg", alt="").card__icon
+          .card__user @nathanf
+        .card__number 1987
+        .card__text FOLLOWERS
+        #card-today-facebook.card__today.card__today--up
+          img(src="assets/icons/icon-up.svg", alt="")
+          span 12 Today
+      //- Card Twitter
+      .card.card--twitter
+        .card__title
+          img(src="/assets/icons/icon-twitter.svg", alt="").card__icon
+          .card__user @nathanf
+        .card__number 1987
+        .card__text FOLLOWERS
+        #card-today-twitter.card__today.card__today--up
+          img(src="assets/icons/icon-up.svg", alt="")
+          span 12 Today
+      //- Card Instagram
+      .card.card--instagram
+        .card__title
+          img(src="/assets/icons/icon-instagram.svg", alt="").card__icon
+          .card__user @nathanf
+        .card__number 1987
+        .card__text FOLLOWERS
+        #card-today-instagram.card__today.card__today--up
+          img(src="assets/icons/icon-up.svg", alt="")
+          span 12 Today
+      //- Card Youtube
+      .card.card--youtube
+        .card__title
+          img(src="/assets/icons/icon-youtube.svg", alt="").card__icon
+          .card__user @nathanf
+        .card__number 1987
+        .card__text FOLLOWERS
+        #card-today-youtube.card__today.card__today--up
+          img(src="assets/icons/icon-up.svg", alt="")
+          span 12 Today
+    article.second-row
+      h2.second-row__title Overview - Today
+      .card.card--small
+        .card__title.card__title--small Page Views
+          img(src="/assets/icons/icon-facebook.svg", alt="").card__icon.card__icon--small
+        .card__number.card__number--small 87
+        .card__today.card__today--up.card__today--small
+          img(src="assets/icons/icon-up.svg", alt="")
+          span 3%
+
+      .card.card--small
+        .card__title.card__title--small Likes
+          img(src="/assets/icons/icon-facebook.svg", alt="").card__icon.card__icon--small
+        .card__number.card__number--small 52
+        .card__today.card__today--down.card__today--small
+          img(src="assets/icons/icon-down.svg", alt="")
+          span 2%
+
+      .card.card--small
+        .card__title.card__title--small Likes
+          img(src="/assets/icons/icon-instagram.svg", alt="").card__icon.card__icon--small
+        .card__number.card__number--small 5462
+        .card__today.card__today--up.card__today--small
+          img(src="assets/icons/icon-up.svg", alt="")
+          span 2572%
+
+      .card.card--small
+        .card__title.card__title--small Profle Views
+          img(src="/assets/icons/icon-instagram.svg", alt="").card__icon.card__icon--small
+        .card__number.card__number--small 52K
+        .card__today.card__today--up.card__today--small
+          img(src="assets/icons/icon-up.svg", alt="")
+          span 1375%
+
+      .card.card--small
+        .card__title.card__title--small Retweets
+          img(src="/assets/icons/icon-twitter.svg", alt="").card__icon.card__icon--small
+        .card__number.card__number--small 117
+        .card__today.card__today--up.card__today--small
+          img(src="assets/icons/icon-up.svg", alt="")
+          span 303%
+
+      .card.card--small
+        .card__title.card__title--small Likes
+          img(src="/assets/icons/icon-twitter.svg", alt="").card__icon.card__icon--small
+        .card__number.card__number--small 507
+        .card__today.card__today--up.card__today--small
+          img(src="assets/icons/icon-up.svg", alt="")
+          span 553%
+
+      .card.card--small
+        .card__title.card__title--small Likes
+          img(src="/assets/icons/icon-youtube.svg", alt="").card__icon.card__icon--small
+        .card__number.card__number--small 107
+        .card__today.card__today--down.card__today--small
+          img(src="assets/icons/icon-down.svg", alt="")
+          span 19%
+
+      .card.card--small
+        .card__title.card__title--small Total Views
+          img(src="/assets/icons/icon-youtube.svg", alt="").card__icon.card__icon--small
+        .card__number.card__number--small 1407
+        .card__today.card__today--down.card__today--small
+          img(src="assets/icons/icon-down.svg", alt="")
+          span 12%
+    script(src="js/scripts-min.js")

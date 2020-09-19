@@ -1,0 +1,12 @@
+// Estilos base
+@import 'base/normalize.scss';
+@import 'base/base.scss';
+
+// Variables
+@import 'config/variables.scss';
+
+// Blocks
+@import 'blocks/header.scss';
+@import 'blocks/rows.scss';
+@import 'blocks/switch.scss';
+@import 'blocks/card.scss';

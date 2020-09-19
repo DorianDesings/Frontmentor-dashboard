@@ -1,0 +1,45 @@
+.header {
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  &__texts {
+    width: 100%;
+    padding-bottom: 25px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--dark-grayish-blue);
+
+    @media screen and (min-width: 768px) {
+      border-bottom: none;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 41px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--dark-grayish-blue);
+  }
+
+  &__subtitle {
+    @media screen and (min-width: 768px) {
+      margin-bottom: 35px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 80% 20%;
+    max-width: 80%;
+  }
+
+  @media screen and (min-width: 1440px) {
+    grid-template-columns: 85% 15%;
+  }
+}

@@ -1,0 +1,122 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+  background-color: var(--light-grayish-blue);
+  border-radius: 10px;
+  position: relative;
+  padding: 40px 0 25px 0;
+  // overflow: hidden; Maxi fail!!!
+
+  &__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    &--small {
+      grid-column: span 2;
+      justify-content: space-between;
+    }
+  }
+
+  &__icon {
+    margin-right: 10px;
+
+    &--small {
+      margin-right: 0;
+    }
+  }
+
+  &__number {
+    font-size: 52px;
+    margin-bottom: 10px;
+
+    &--small {
+      font-size: 40px;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+  }
+
+  &__today {
+    display: flex;
+    align-items: center;
+
+    & img {
+      margin-right: 5px;
+    }
+
+    &--small {
+      justify-self: flex-end;
+    }
+  }
+
+  &__today--up {
+    color: var(--green);
+  }
+
+  &__today--down {
+    color: var(--red);
+  }
+
+  &--facebook::before,
+  &--twitter::before,
+  &--instagram::before,
+  &--youtube::before {
+    content: '';
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px 10px 0 0;
+  }
+
+  &--facebook::before {
+    background-color: var(--facebook);
+  }
+
+  &--twitter::before {
+    background-color: var(--twitter);
+  }
+
+  &--instagram::before {
+    background-image: var(--instagram);
+  }
+
+  &--youtube::before {
+    background-color: var(--youtube);
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 255px;
+  }
+  &--small {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 50px);
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media screen and (min-width: 768px) {
+      &:nth-child(n) {
+        grid-column: span 2;
+      }
+
+      &:nth-child(8) {
+        grid-column: 2 / 4;
+      }
+    }
+
+    @media screen and (min-width: 1440px) {
+      &:nth-child(n) {
+        grid-column: auto;
+      }
+    }
+  }
+}
