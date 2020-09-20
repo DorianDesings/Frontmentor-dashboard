@@ -50,7 +50,7 @@ gulp.task('babel', () => {
     .pipe(concat('scripts-min.js'))
     .pipe(babel())
     .pipe(terser())
-    .pipe(gulp.dest('./public/js'));
+    .pipe(gulp.dest('./docs/js'));
 });
 
 gulp.task('views', () => {
@@ -67,7 +67,7 @@ gulp.task('views', () => {
         type: 'timestamp'
       })
     )
-    .pipe(gulp.dest('./public'));
+    .pipe(gulp.dest('./docs'));
 });
 
 gulp.task('sass', () => {
@@ -80,25 +80,25 @@ gulp.task('sass', () => {
       })
     )
     .pipe(postcss(cssPlugins))
-    .pipe(gulp.dest('./public/css'))
+    .pipe(gulp.dest('./docs/css'))
     .pipe(stream());
 });
 
 gulp.task('clean', () => {
   return gulp
-    .src('./public/css/styles.css')
+    .src('./docs/css/styles.css')
     .pipe(plumber())
     .pipe(
       clean({
-        content: ['./public/*.html']
+        content: ['./docs/*.html']
       })
     )
-    .pipe(gulp.dest('./public/css'));
+    .pipe(gulp.dest('./docs/css'));
 });
 
 gulp.task('default', () => {
   server({
-    server: './public'
+    server: './docs'
   });
   gulp.watch('./src/views/**/*.pug', gulp.series('views')).on('change', reload);
   gulp.watch('./src/scss/**/*.scss', gulp.series('sass'));
