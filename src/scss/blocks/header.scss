@@ -19,6 +19,9 @@
     margin: 0;
     margin-bottom: 10px;
     font-size: 41px;
+    @media screen and (min-width: 768px) {
+      font-size: 20px;
+    }
   }
 
   &__subtitle {
@@ -26,6 +29,9 @@
     font-size: 24px;
     font-weight: 700;
     color: var(--dark-grayish-blue);
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
   }
 
   &__subtitle {
