@@ -3,17 +3,22 @@
   flex-direction: column;
   align-items: center;
   font-weight: 700;
-  background-color: var(--light-grayish-blue);
+  background-color: var(--card-bg);
   border-radius: 10px;
   position: relative;
   padding: 40px 0 25px 0;
+  cursor: pointer;
   // overflow: hidden; Maxi fail!!!
+
+  &:hover {
+    background-color: var(--card-bg-hover);
+  }
 
   &__title {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-
+    color: var(--text-color);
     &--small {
       grid-column: span 2;
       justify-content: space-between;
@@ -31,6 +36,7 @@
   &__number {
     font-size: 52px;
     margin-bottom: 10px;
+    color: var(--title-color);
 
     &--small {
       font-size: 40px;
@@ -41,6 +47,7 @@
     font-weight: 400;
     letter-spacing: 4px;
     margin-bottom: 30px;
+    color: var(--text-color);
   }
 
   &__today {

@@ -9,7 +9,7 @@
     width: 100%;
     padding-bottom: 25px;
     margin-bottom: 10px;
-    border-bottom: 1px solid var(--dark-grayish-blue);
+    border-bottom: 1px solid var(--soft-blue);
 
     @media screen and (min-width: 768px) {
       border-bottom: none;
@@ -22,6 +22,7 @@
     margin: 0;
     margin-bottom: 10px;
     font-size: 41px;
+    color: var(--title-color);
     @media screen and (min-width: 768px) {
       font-size: 20px;
       margin-bottom: 0;
@@ -32,7 +33,7 @@
     margin: 0;
     font-size: 24px;
     font-weight: 700;
-    color: var(--dark-grayish-blue);
+    color: var(--text-color);
     @media screen and (min-width: 768px) {
       font-size: 14px;
     }

@@ -11,25 +11,34 @@
   );
   --youtube: hsl(348, 97%, 39%);
 
-  // Dark
-  --Very-Dark-Blue: hsl(230, 17%, 14%);
-  --Very-Dark-Blue: hsl(232, 19%, 15%);
-  --Dark-Desaturated-Blue: hsl(228, 28%, 20%);
-  --Desaturated-Blue: hsl(228, 34%, 66%);
-  --White: hsl(0, 0%, 100%);
-  --toggle-color-dark: linear-gradient(
+  // DARK THEME
+  --bg-color: hsl(230, 17%, 14%);
+  --bg-color-head: hsl(232, 19%, 15%);
+  --card-bg: hsl(228, 28%, 20%);
+  --card-bg-hover: hsl(228, 26%, 27%);
+  --soft-blue: hsl(228, 34%, 66%);
+  --toggle-bg: linear-gradient(
     90deg,
     hsl(210, 78%, 56%) 0%,
     hsl(146, 68%, 55%) 100%
   );
+  --title-color: hsl(0, 0%, 100%);
+  --text-color: hsl(228, 34%, 66%);
 
-  // Light
-  --very-pale-blue: hsl(225, 100%, 98%);
-  --white: hsl(0, 0%, 100%);
-  --light-grayish-blue: hsl(227, 47%, 96%);
-  --dark-grayish-blue: hsl(228, 12%, 44%);
-  --very-dark-blue: hsl(230, 17%, 14%);
-  --toggle-color-light: hsl(230, 22%, 74%);
+  // LIGHT THEME
+  --bg-color: hsl(0, 0%, 100%);
+  --bg-color-head: hsl(225, 100%, 98%);
+  --card-bg: hsl(227, 47%, 96%);
+  --card-bg-hover: hsl(232, 33%, 91%);
+  --soft-blue: hsl(228, 12%, 44%);
+  --toggle-bg: hsl(230, 22%, 74%);
+  --toggle-bg-hover: linear-gradient(
+    90deg,
+    hsl(210, 78%, 56%) 0%,
+    hsl(146, 68%, 55%) 100%
+  );
+  --title-color: hsl(228, 12%, 44%);
+  --text-color: hsl(230, 17%, 14%);
 
   // fonts
   --main-font: 'Inter', sans-serif;
