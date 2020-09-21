@@ -3,6 +3,7 @@
   margin-right: auto;
   display: grid;
   grid-template-columns: 1fr;
+  align-items: center;
 
   &__texts {
     width: 100%;
@@ -12,6 +13,8 @@
 
     @media screen and (min-width: 768px) {
       border-bottom: none;
+      margin: 0;
+      padding: 0;
     }
   }
 
@@ -21,6 +24,7 @@
     font-size: 41px;
     @media screen and (min-width: 768px) {
       font-size: 20px;
+      margin-bottom: 0;
     }
   }
 
@@ -34,15 +38,10 @@
     }
   }
 
-  &__subtitle {
-    @media screen and (min-width: 768px) {
-      margin-bottom: 35px;
-    }
-  }
-
   @media screen and (min-width: 768px) {
     grid-template-columns: 80% 20%;
     max-width: 80%;
+    margin-bottom: 35px;
   }
 
   @media screen and (min-width: 1440px) {
